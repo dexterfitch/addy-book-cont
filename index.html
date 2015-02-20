@@ -11,8 +11,8 @@
     <div class='container'>
       <h1>Address book</h1>
 
-      <div class='row'>
-        <div class='col-md-4'>
+      <div class='col-md-4'>
+        <div class='contact-input'>
           <h2>Add a contact:</h2>
           <form id='new-contact'>
             <div class='form-group-sm'>
@@ -23,31 +23,37 @@
               <label for='new-last-name'>Last name</label>
               <input type='text' class='form-control' id='new-last-name'>
             </div>
-            <div class='form-group-sm'>
-              <label for='new-street'>Street</label>
-              <input type='text' class='form-control' id='new-street'>
+          </div>
+          <div id='new-addresses'>
+            <div class='new-address'>
+              <div class='form-group-sm'>
+                <label for='new-street'>Street</label>
+                <input type='text' class='form-control new-street'>
+              </div>
+              <div class='form-group-sm'>
+                <label for='new-city'>City</label>
+                <input type='text' class='form-control new-city'>
+              </div>
+              <div class='form-group-sm'>
+                <label for='new-state'>State</label>
+                <input type='text' class='form-control new-state'>
+              </div>
+              <div class='form-group-sm'>
+                <label for='new-zip'>Zip</label>
+                <input type='text' class='form-control new-zip'>
+              </div>
             </div>
-            <div class='form-group-sm'>
-              <label for='new-city'>City</label>
-              <input type='text' class='form-control' id='new-city'>
-            </div>
-            <div class='form-group-sm'>
-              <label for='new-state'>State</label>
-              <input type='text' class='form-control' id='new-state'>
-            </div>
-            <div class='form-group-sm'>
-              <label for='new-zip'>Zip</label>
-              <input type='text' class='form-control' id='new-zip'>
-            </div>
-            <div class='button'>
-              <button type='submit' class='btn btn-info'><span class="glyphicon glyphicon-plus"></span></button>
-            </div>
+          </div>
+          <div class='button'>
+            <span class='btn btn-info' id='add-address'><span class='glyphicon glyphicon-home'></span> Add Address</span>
+            <button type='submit' class='btn btn-info'><span class='glyphicon glyphicon-plus'></span> Add Contact</button>
+          </div>
           </form>
         </div>
 
         <div class='col-md-4'>
           <h2>Contacts:</h2>
-          <ul class="list-unstyled" id='contacts'>
+          <ul class='list-unstyled' id='contacts'>
 
           </ul>
         </div>
@@ -58,10 +64,9 @@
 
             <p><b>First name:</b> <span class='first-name'></span></p>
             <p><b>Last name:</b> <span class='last-name'></span></p>
-            <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><br>
-              <span class='street'></span><br>
-              <span class='city-state-zip'></span><br>
-            </p>
+            <ul class='list-unstyled' id='addresses'>
+
+            </ul>
           </div>
         </div>
       </div>
