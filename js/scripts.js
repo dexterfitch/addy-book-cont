@@ -28,7 +28,7 @@ $(document).ready(function() {
                        cityStateZipAddress: newAddress.cityStateZipAddress()
                        };
 
-    $('ul#contacts').append('<li><span class="contact">' + newContact.firstName + " " + newContact.lastName + '</span></li>');
+    $('ul#contacts').append('<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="contact">' + newContact.firstName + " " + newContact.lastName + '</span></li>');
 
     $('input#new-first-name').val("");
     $('input#new-last-name').val("");

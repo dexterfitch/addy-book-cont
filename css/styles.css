@@ -2,7 +2,11 @@
   display: none;
 }
 
-.contact {
+.button {
+  margin-top: 1em;
+}
+
+li {
   cursor: pointer;
   color: #0088cc;
 }
